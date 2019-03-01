@@ -48,7 +48,7 @@ public class RegisterUser extends HttpServlet {
 		   user.setMobile(Long.parseLong(mobile.trim()));
 		   out.println("Registration Done by Get");
 		  
-		  
+	  	  
 	}
 	
 	
