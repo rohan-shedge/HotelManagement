@@ -1,4 +1,4 @@
-package com.mahabaleshwar.dao;
+/*package com.mahabaleshwar.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,10 +10,10 @@ import java.util.Properties;
 
 public class ConnectionManager {
 
-
+//     private DBConfig dbconfig;
 
 	 public ConnectionManager() {
-		 this(new DBConfigManager().getConfigManager().getConfig());
+		// this(new DBConfigManager().getConfigManager().getConfig());
 	 }
 
 	 public Connection getConnection() throws Exception {
@@ -22,7 +22,8 @@ public class ConnectionManager {
 		 SQLException sqlErr;
 
 		 try {
-			 conn = DriverManager.getConnection(this.dbConfig.getJDBCURL(), getProperties());
+			 throw new SQLException();
+		//	 conn = DriverManager.getConnection(this.dbConfig.getJDBCURL(), getProperties());
 		//	 Statement stmt = conn.createStatement();
 
 		//	 stmt.executeUpdate("SET TEMPORARY OPTION CONNECTION_AUTHENTICATION = " + "'company=VERITAS;application=CommonRepository;"
@@ -31,7 +32,7 @@ public class ConnectionManager {
 		//	 stmt.executeUpdate("SET TEMPORARY OPTION ALLOW_NULLS_BY_DEFAULT='ON'");
 		//	 stmt.executeUpdate("SET OPTION PUBLIC.MAX_STATEMENT_COUNT = 300");
 //			 closeStatement(stmt);
-			 return conn;
+			 return;
 		 } catch (SQLException e) {
 			 sqlErr = e;
 			 throw sqlErr;
@@ -177,3 +178,4 @@ public static void main(final String[] args) throws Exception {
          }
      }
 }
+*/
